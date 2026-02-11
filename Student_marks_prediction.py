@@ -33,11 +33,12 @@ hours = [[8.5]]
 predicted_mark = model.predict(hours)
 print(f"Predicted mark for 8.5 hours of study: {predicted_mark[0]:.2f}")
 
-# Gra
+# Graphs
 plt.scatter(X, y, color='blue', label='Actual Data')
 plt.plot(X, model.predict(X), color='red', label='Regression Line')
 plt.title('Hours vs Marks')
 plt.xlabel('Hours Studied')
 plt.ylabel('Marks Scored')
 plt.legend()
+
 plt.show()
